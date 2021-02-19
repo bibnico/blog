@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/jquery-3.5.1.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/checkboxes.css">
+		<script src="js/js.js" type="text/javascript" charset="utf-8"></script>
+		
+		
+		
+		
+	</head>
+	<body>
+		<div class="box_max">
+			<!-- 双栏 外框 -->
+			<nav class="buff" id="buff"></nav>
+			<div class="left_box" id="left_box_id" style="display: none;">
+				<ul class="left_ul">
+					<li><a>主页</a></li>
+					<li><a>分类</a></li>
+					<li><a>归档</a></li>
+					<li><a>搜索</a></li>
+				</ul>
+			</div>
+				<div class="right_box">
+				<ul>
+					   <!-- box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%); -->
+					<li>
+						<div class="neirong_box">
+							<a class="right_box_text" href="content.html">消失了好久</a>
+							<p class="jianjie">博客已经从Bitcron迁移到Hugo，且托管在Vercel。 近况 目前采用:MarkEditor + VS code + Github Desktop + Vercel的模式，管理站点。 保持使用MarkEditor写文章，主要是习惯了用它来管理文档，还有则是为了跟B...<p>
+							<a class="right_box_time">2019.09.25</a>
+							<a class="textbg">标签</a>
+						</div>	
+					</li>
+					<li>
+						<div class="neirong_box">
+							<a class="right_box_text">消失了好久</a>
+							<p class="jianjie">博客已经从Bitcron迁移到Hugo，且托管在Vercel。 近况 目前采用:MarkEditor + VS code + Github Desktop + Vercel的模式，管理站点。 保持使用MarkEditor写文章，主要是习惯了用它来管理文档，还有则是为了跟B...<p>
+							<a class="right_box_time">2019.09.25</a>
+							<a class="textbg">标签</a>
+						</div>	
+					</li>
+					
+					<li>
+						<div class="neirong_box">
+							<a class="right_box_text">消失了好久</a>
+							<p class="jianjie">博客已经从Bitcron迁移到Hugo，且托管在Vercel。 近况 目前采用:MarkEditor + VS code + Github Desktop + Vercel的模式，管理站点。 保持使用MarkEditor写文章，主要是习惯了用它来管理文档，还有则是为了跟B...<p>
+							<a class="right_box_time">2019.09.25</a>
+							<a class="textbg">标签</a>
+						</div>	
+					</li>
+					
+					<li>
+						<div class="neirong_box">
+							<a class="right_box_text">消失了好久</a>
+							<p class="jianjie">博客已经从Bitcron迁移到Hugo，且托管在Vercel。 近况 目前采用:MarkEditor + VS code + Github Desktop + Vercel的模式，管理站点。 保持使用MarkEditor写文章，主要是习惯了用它来管理文档，还有则是为了跟B...<p>
+							<a class="right_box_time">2019.09.25</a>
+							<a class="textbg">标签</a>
+						</div>	
+					</li>
+					
+					<li>
+						<div class="neirong_box">
+							<a class="right_box_text">消失了好久</a>
+							<p class="jianjie">博客已经从Bitcron迁移到Hugo，且托管在Vercel。 近况 目前采用:MarkEditor + VS code + Github Desktop + Vercel的模式，管理站点。 保持使用MarkEditor写文章，主要是习惯了用它来管理文档，还有则是为了跟B...<p>
+							<a class="right_box_time">2019.09.25</a>
+							<a class="textbg">标签</a>
+						</div>	
+					</li>
+					
+				</ul>
+			<style type="text/css">
+				
+			</style>
+		</div>
+		<div class="switch_night">
+			<div class="ckbx-style-8 ckbx-medium">
+				<input type="checkbox" id="ckbx-size-2" value="0" checked="" name="ckbx-square-1" class="bu">
+				<label for="ckbx-size-2"></label>
+			</div>
+		</div>
+		</div>
+
+
+
+
+		<script type="text/javascript">
+			
+
+			// 夜间开关
+			// 原理
+			// 点击开关执行方法
+			$('.bu').click(function() {
+
+				// 存储单选框的值 false of true
+				var is_addChoice = $(".bu").is(':checked');
+				// 带入判断
+				if (is_addChoice == true) {
+					// 将值覆盖
+					$('body').removeClass('bodys');
+					$('.buff').removeClass('buff_img');
+					$('.right_box_text,.right_box_time,.top_name,.left_ul li a ').removeClass('as');
+				} else {
+					$('body').addClass('bodys');
+					$('.buff').addClass('buff_img');
+					$('.right_box_text,.right_box_time,.top_name,.left_ul li a ').addClass('as');
+				}
+			})
+
+
+
+
+			//显示隐藏
+			$("#buff").click(function() {
+				// if ($("#left_box_id").css("display") == 'none') {
+				// 	$("#left_box_id").attr("style", "display:block;"); //显示div
+				// } else {
+				// 		$("#left_box_id").attr("style", "display:none;"); //隐藏div
+				// }
+				 $("#left_box_id").toggle()
+			})
+
+		</script>
+	</body>
+</html>
